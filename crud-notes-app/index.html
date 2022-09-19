@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD Notes App - Vanilla JavaScript</title>
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+  </head>
+  <body>
+    <div class="title-nav">
+      <h1>Notes</h1>
+      <div id="button-container">
+        <button class="button" id="info-button">Info</button>
+        <button
+        class="button"
+          id="add-button"
+          onclick="createNewElement()"
+          value="create new element"
+          type="button"
+        >
+          +
+        </button>
+      </div>
+    </div>
+    <div id="notes-container">
+      <textarea class="note">Some sample text</textarea>
+    </div>
+  </body>
+  <script type="text/javascript" src="./script.js"></script>
+</html>
