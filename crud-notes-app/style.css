@@ -1,11 +1,14 @@
 html {
-    background-color: rgba(0, 0, 0, 0.575);
+    background-color: white;
+    margin: 0;
 }
 
 h1 {
-    color: white;
+    color: black;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin-left: 8px;
+    font-size: 40px;
+    line-height: 25px;
 }
 
 .button  {
@@ -13,17 +16,17 @@ h1 {
     height: 40px;
     border-radius: 25%;
     border: none;
-    background-color: grey;
-    color: lightgray;
+    background-color: whitesmoke;
+    color: black;
+    cursor: pointer;
+    transition: background 0.2;
+}
+.button:hover  {
+    background-color: rgb(210, 210, 210);
 }
 
-#button-container {
-    display: block;
-    height: 40px;
-    width: 100px;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-right: -5px;    
+#info-button {
+    margin: auto 10px auto auto;
 }
 
 .title-nav {
@@ -37,6 +40,7 @@ h1 {
     display: block;
     margin: auto;
     width: 300px;
+    min-width: 200px;
     min-height: 75px;
     max-height: 100px;
     border: none;
@@ -44,4 +48,27 @@ h1 {
     border-radius: 10px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding: 15px 20px 15px 20px;
+    resize: none;
+}
+
+.add-note {
+    display: block;
+    margin: auto;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(233, 233, 233);
+    color: black;
+    cursor: pointer;
+    transition: background 0.2;
+}
+.add-note:hover {
+    background-color: whitesmoke;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
 }
